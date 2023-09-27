@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: inherit;
 }
 
@@ -21,7 +28,7 @@ html.lang-pt {
 }
 
 body {
-    height: 100vh;
+    height: calc(100vh - 88px);
     color: #fff;
     font-family: "SF Pro", Arial, sans-serif;
 }
@@ -92,13 +99,41 @@ body {
 .promo__features-item::before {
     content: "";
     position: absolute;
-    bottom: -0.9px; /* Отступ вверх для создания градиентной границы */
-    left: 0; /* Отступ влево для создания градиентной границы */
-    width: 100%; /* Дополнительная ширина для градиентной границы */
-    height: calc(100% + 2px); /* Дополнительная высота для градиентной границы */
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.20) 0%, rgba(0, 0, 0, 0) 7%,  rgba(0, 0, 0, 0) 93%, rgba(255, 255, 255, 0.20) 100%); /* Градиентная граница */
-    border-radius: 2.76vw; /* Радиус границы должен совпадать с радиусом элемента */
-    z-index: 0; /* Поместить границу под основным содержимым */
+    bottom: -0.9px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 2px);
+    background: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(0, 0, 0, 0) 7%,
+        rgba(0, 0, 0, 0) 93%,
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    border-radius: 2.76vw;
+    z-index: 0;
+}
+
+.promo__features-item_blue {
+    width: 26.76vw;
+    height: 35.53vw;
+    position: relative;
+    background-color: rgba(255, 130, 228, 0.24);
+    border-radius: 2.76vw;
+}
+
+.promo__features-item_blue::after {
+    content: "";
+    position: absolute;
+    top: -3vw;
+    right: 0;
+    width: 35.53vw;
+    height: 18.71vw;
+    background: radial-gradient(circle, #00bfff, transparent);
+    mix-blend-mode: overlay;
+    filter: blur(30.580669403076172px);
+    border-radius: 2.76vw;
+    z-index: 0;
 }
 
 .promo__features-item__bg {
@@ -145,8 +180,8 @@ body {
     height: 100%;
     bottom: 0;
     left: 0;
-    background:  rgba(255, 130, 228, 0.1);
-    z-index: 0; 
+    background: rgba(255, 130, 228, 0.1);
+    z-index: 0;
 }
 
 .promo__offers {
@@ -173,10 +208,11 @@ body {
 .promo__offers-item_best {
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.3);
+    align-items: center;
 }
 
 .promo__offers-item_best .promo__offers-item__price {
-    margin-top: 0.77vw;
+    margin-top: 0.8vh;
 }
 
 .promo__offers-item__label {
@@ -260,5 +296,3 @@ body {
     text-transform: capitalize;
     white-space: nowrap;
 }
-
-/* проверить картинки, формат и обрезание добавить бордер*/

@@ -28,7 +28,7 @@ html.lang-pt {
 }
 
 body {
-    height: calc(100vh - 88px);
+    height: 100%;
     color: #fff;
     font-family: "SF Pro", Arial, sans-serif;
 }

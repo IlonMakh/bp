@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+}
+
+html.lang-en,
+html.lang-ja {
+    font-size: 2.564vw;
+}
+
+html.lang-de,
+html.lang-es,
+html.lang-fr,
+html.lang-pt {
+    font-size: 2.151vw;
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+    font-family: "SF Pro", Arial, sans-serif;
+}
+
+.promo {
+    height: 100%;
+    position: relative;
+}
+
+.promo__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 87.69vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    position: relative;
+}
+
+.promo__close {
+    position: absolute;
+    top: 8.53vh;
+    left: 0;
+    width: 3.07vw;
+    height: 3.07vw;
+}
+
+.promo__close-ico {
+    width: 100%;
+    height: 100%;
+}
+
+.promo__title {
+    text-align: center;
+    text-shadow: 0px 0px 5.68vh rgba(4, 3, 26, 0.83);
+    font-size: 4.2rem;
+    font-weight: 860;
+    line-height: 110%;
+    text-transform: capitalize;
+}
+
+.promo__features {
+    margin-top: 4.82vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promo__features-item {
+    width: 26.76vw;
+    height: 35.53vw;
+    position: relative;
+    background-color: rgba(255, 130, 228, 0.24);
+    border-radius: 2.76vw;
+}
+
+.promo__features-item::before {
+    content: "";
+    position: absolute;
+    bottom: -0.9px; /* Отступ вверх для создания градиентной границы */
+    left: 0; /* Отступ влево для создания градиентной границы */
+    width: 100%; /* Дополнительная ширина для градиентной границы */
+    height: calc(100% + 2px); /* Дополнительная высота для градиентной границы */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.20) 0%, rgba(0, 0, 0, 0) 7%,  rgba(0, 0, 0, 0) 93%, rgba(255, 255, 255, 0.20) 100%); /* Градиентная граница */
+    border-radius: 2.76vw; /* Радиус границы должен совпадать с радиусом элемента */
+    z-index: 0; /* Поместить границу под основным содержимым */
+}
+
+.promo__features-item__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 2.76vw;
+}
+
+.promo__features-item__title {
+    position: absolute;
+    font-family: "SF Pro", Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    bottom: 7.93%;
+    left: 6.9%;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+.promo__features-item__title-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(4, 6, 26, 0) 62.04%,
+        rgba(6, 9, 37, 0.56) 76.68%,
+        #15072f 100%
+    );
+    border-radius: 0 0 2.76vw 2.76vw;
+}
+
+.promo__features-item__shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background:  rgba(255, 130, 228, 0.1);
+    z-index: 0; 
+}
+
+.promo__offers {
+    margin-top: 5.88vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.94vh;
+}
+
+.promo__offers-item {
+    font-size: 1.6rem;
+    width: 100%;
+    height: 14.35vw;
+    border-radius: 8.2vw;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16.15vw 0 6.15vw;
+    position: relative;
+}
+
+.promo__offers-item_best {
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.promo__offers-item_best .promo__offers-item__price {
+    margin-top: 0.77vw;
+}
+
+.promo__offers-item__label {
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    right: 6.15vw;
+    border-radius: 2.56vw;
+    padding: 0.64vw 5.78vw;
+    background-color: #fff;
+    color: #141131;
+    font-family: "Roboto", Arial, sans-serif;
+    transform: translate(0, -50%);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.promo__offers-item__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.512vw;
+}
+
+.promo__offers-item__title {
+    text-transform: uppercase;
+    font-family: "SF Pro Display", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.promo__offers-item__subtitle {
+    font-family: "SF Pro Display", Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.promo__offers-item__price {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.promo__offers-item__link {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8.2vw;
+}
+
+.promo__offers-btn {
+    display: block;
+    text-align: center;
+    padding: 4.1vw 0;
+    text-decoration: none;
+    margin-top: 1.89vh;
+    width: 100%;
+    height: 14.35vw;
+    border-radius: 8.2vw;
+    background-color: #fff;
+    color: #070b33;
+    font-family: "SF Pro", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 590;
+    line-height: 120%;
+}
+
+.promo__footer {
+    width: 100%;
+    margin: 5.21vh 0 3.67vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.promo__footer-link {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "SF Pro Display", Arial, sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 0.057rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+/* проверить картинки, формат и обрезание добавить бордер*/

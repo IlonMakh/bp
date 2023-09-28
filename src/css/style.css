@@ -65,7 +65,7 @@ body {
 
 .promo__close {
     position: absolute;
-    top: 8.53%;
+    top: 8.53vh;
     left: 0;
     width: 3.07vw;
     height: 3.07vw;
@@ -86,7 +86,7 @@ body {
 }
 
 .promo__features {
-    margin-top: 10.43vw;
+    margin-top: 4.82vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -182,11 +182,11 @@ body {
 }
 
 .promo__offers {
-    margin-top: 12.74vw;
+    margin-top: 5.88vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2.05vw;
+    gap: 0.94vh;
 }
 
 .promo__offers-item {
@@ -268,7 +268,7 @@ html.lang-de .promo__offers-item {
     text-align: center;
     padding: 4.1vw 0;
     text-decoration: none;
-    margin-top: 4.1vw;
+    margin-top: 1.895vh;
     width: 100%;
     height: 14.35vw;
     border-radius: 8.2vw;
@@ -282,7 +282,7 @@ html.lang-de .promo__offers-item {
 
 .promo__footer {
     width: 100%;
-    margin: 11.28vw 0 7.94vw;
+    margin: 5.21vh 0 3.67vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,13 +318,13 @@ screen and (width: 320px) and (height: 568px) {
     }
 
     .promo__close {
-        top: 5.67%;
+        top: 5.67vh;
         width: 3.2vw;
         height: 3.2vw;
     }
     
     .promo__features {
-        margin-top: 10.66vw;
+        margin-top: 5.99vh;
     }
     
     .promo__features-item {
@@ -333,7 +333,7 @@ screen and (width: 320px) and (height: 568px) {
     }
     
     .promo__offers {
-        margin-top: 10.77vw;
+        margin-top: 6.05vh;
         gap: 2.13vw;
     }
     
@@ -363,7 +363,7 @@ screen and (width: 320px) and (height: 568px) {
     }
     
     .promo__footer {
-        margin: 7.46vw 0 2.93vw;
+        margin: 4.19vh 0 1.65vh;
     }
     
     .promo__footer-link {

@@ -299,7 +299,8 @@ html.lang-de .promo__offers-item {
     white-space: nowrap;
 }
 
-@media  screen and (max-height: 811px) {
+@media  screen and (width: 414px) and (height: 736px),
+screen and (width: 320px) and (height: 568px) {
     html.lang-en,
     html.lang-ja {
         font-size: 2.6vw;

@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const yearPrice = "$39.99";
+    const yearlyAccessPrice = "$0.48";
+    const weeklyAccessPrice = "$6.99";
     const userLanguage = navigator.language.slice(0, 2);
     const urlParams = new URLSearchParams(window.location.search);
     const lang = urlParams.get("lang") || userLanguage;
@@ -18,19 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
             let replacedTranslation = translations[translationKey];
     
             if (translationKey === "Just {{price}} per year") {
-                const price = "$39.99";
-                replacedTranslation = interpolateVariables(replacedTranslation, { price });
+                replacedTranslation = interpolateVariables(replacedTranslation, { price: yearPrice });
             }
     
             if (translationKey === "{{price}} <br>per week" && !isSecondTime) {
-                const price = "$0.48";
-                replacedTranslation = interpolateVariables(replacedTranslation, { price });
+                replacedTranslation = interpolateVariables(replacedTranslation, { price: yearlyAccessPrice });
                 isSecondTime = true;
             }
     
             if (translationKey === "{{price}} <br>per week" && isSecondTime) {
-                const price = "$6.99";
-                replacedTranslation = interpolateVariables(replacedTranslation, { price });
+                replacedTranslation = interpolateVariables(replacedTranslation, { price: weeklyAccessPrice });
             }
     
             element.innerHTML = replacedTranslation || translations[translationKey];

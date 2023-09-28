@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const userLanguage = navigator.language.slice(0, 2);
     const urlParams = new URLSearchParams(window.location.search);
     const lang = urlParams.get("lang") || userLanguage;
+    let vh = window.innerHeight * 0.01;
+    
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     function interpolateVariables(translation, variables) {
         return translation.replace(/\{\{(\w+)\}\}/g, (match, variableName) => {

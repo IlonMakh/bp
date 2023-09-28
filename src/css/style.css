@@ -33,6 +33,7 @@ html.lang-pt {
 
 body {
     height: 100%;
+    height: calc(var(--vh, 1vh) * 100);
     color: #fff;
     font-family: "SF Pro", Arial, sans-serif;
 }
@@ -298,7 +299,7 @@ html.lang-de .promo__offers-item {
     white-space: nowrap;
 }
 
-@media (max-height: 811px) {
+@media  screen and (max-height: 811px) {
     html.lang-en,
     html.lang-ja {
         font-size: 2.6vw;

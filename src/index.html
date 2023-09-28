@@ -1,61 +1,159 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
         <title>Test</title>
     </head>
+
     <body>
         <section class="promo">
-            <img class="promo__bg" src="assets/bg.jpg" alt="background"/>
+            <img
+                class="promo__bg"
+                srcset="
+                    assets/bg-s@1x.jpg  375w,
+                    assets/bg-s@2x.jpg  750w,
+                    assets/bg-s@3x.jpg 1125w,
+                    assets/bg-l@1x.png  390w,
+                    assets/bg-l@2x.png  780w,
+                    assets/bg-l@3x.png 1170w
+                "
+                sizes="(min-height: 811px) 390px,
+                (max-height: 811px) 375px,
+                100vw"
+                src="assets/bg-l@1x.png"
+                alt="background" />
+
             <div class="container">
+
                 <a href="#" class="promo__close">
-                    <img class="promo__close-ico" src="assets/Cross.svg" alt="close button">
+                    <img
+                        class="promo__close-ico"
+                        src="assets/Cross.svg"
+                        alt="close button" />
                 </a>
-                <h3 class="promo__title" data-translate="Get Unlimited <br>Access">Get unlimited access</h3>
+                <h3
+                    class="promo__title"
+                    data-translate="Get Unlimited <br>Access">
+                    Get unlimited access
+                </h3>
+
                 <div class="promo__features">
                     <div class="promo__features-item promo__features-item_blue">
-                        <img class="promo__features-item__bg" src="assets/feature_1.jpg" alt=""/>
-                        <h6 class="promo__features-item__title" data-translate="Unlimited Art <br>Creation">Unlimited art <br>creation</h6>
+                        <img
+                            class="promo__features-item__bg"
+                            srcset="
+                                assets/feature_1.png    1x,
+                                assets/feature_1@2x.png 2x,
+                                assets/feature_1@3x.png 3x
+                            "
+                            src="assets/feature_1.png"
+                            alt="feature 1" />
+                        <h6
+                            class="promo__features-item__title"
+                            data-translate="Unlimited Art <br>Creation">
+                            Unlimited art <br />creation
+                        </h6>
                         <div class="promo__features-item__shadow"></div>
                         <div class="promo__features-item__title-shadow"></div>
                     </div>
                     <div class="promo__features-item">
-                        <img class="promo__features-item__bg" src="assets/feature_2.png" alt=""/>
-                        <h6 class="promo__features-item__title" data-translate="Exclusive <br>Styles">Exclusive <br>styles</h6>
+                        <img
+                            class="promo__features-item__bg"
+                            srcset="
+                                assets/feature_2.png    1x,
+                                assets/feature_2@2x.png 2x,
+                                assets/feature_2@3x.png 3x
+                            "
+                            src="assets/feature_2.png"
+                            alt="feature 2" />
+                        <h6
+                            class="promo__features-item__title"
+                            data-translate="Exclusive <br>Styles">
+                            Exclusive <br />styles
+                        </h6>
                         <div class="promo__features-item__shadow"></div>
                         <div class="promo__features-item__title-shadow"></div>
                     </div>
                     <div class="promo__features-item">
-                        <img class="promo__features-item__bg" src="assets/feature_3.png" alt=""/>
-                        <h6 class="promo__features-item__title" data-translate="Magic Avatars <br>With 20% Off">Magic Avatars <br>With 20% Off</h6>
+                        <img
+                            class="promo__features-item__bg"
+                            srcset="
+                                assets/feature_3.png    1x,
+                                assets/feature_3@2x.png 2x,
+                                assets/feature_3@3x.png 3x
+                            "
+                            src="assets/feature_3.png"
+                            alt="feature 3" />
+                        <h6
+                            class="promo__features-item__title"
+                            data-translate="Magic Avatars <br>With 20% Off">
+                            Magic Avatars <br />With 20% Off
+                        </h6>
                         <div class="promo__features-item__shadow"></div>
                         <div class="promo__features-item__title-shadow"></div>
                     </div>
                 </div>
+
                 <div class="promo__offers">
                     <div class="promo__offers-item promo__offers-item_best">
-                        <div class="promo__offers-item__label" data-translate="BEST OFFER">Best offer</div>
-                        <div class="promo__offers-item__title-wrapper">
-                            <h6 class="promo__offers-item__title" data-translate="YEARLY ACCESS">Yearly access</h6>
-                            <p class="promo__offers-item__subtitle" data-translate="Just {{price}} per year"></p>
+                        <div
+                            class="promo__offers-item__label"
+                            data-translate="BEST OFFER">
+                            Best offer
                         </div>
-                        <div class="promo__offers-item__price" data-translate="{{price}} <br>per week"></div>
-                        <a href="https://apple.com/" class="promo__offers-item__link"></a>
+                        <div class="promo__offers-item__title-wrapper">
+                            <h6
+                                class="promo__offers-item__title"
+                                data-translate="YEARLY ACCESS">
+                                Yearly access
+                            </h6>
+                            <p
+                                class="promo__offers-item__subtitle"
+                                data-translate="Just {{price}} per year"></p>
+                        </div>
+                        <div
+                            class="promo__offers-item__price"
+                            data-translate="{{price}} <br>per week"></div>
+                        <a
+                            href="https://apple.com/"
+                            class="promo__offers-item__link"></a>
                     </div>
                     <div class="promo__offers-item">
-                        <h6 class="promo__offers-item__title" data-translate="WEEKLY ACCESS">Weekly access</h6>
-                        <div class="promo__offers-item__price" data-translate="{{price}} <br>per week"></div>
-                        <a href="https://google.com/" class="promo__offers-item__link"></a>
+                        <h6
+                            class="promo__offers-item__title"
+                            data-translate="WEEKLY ACCESS">
+                            Weekly access
+                        </h6>
+                        <div
+                            class="promo__offers-item__price"
+                            data-translate="{{price}} <br>per week"></div>
+                        <a
+                            href="https://google.com/"
+                            class="promo__offers-item__link"></a>
                     </div>
-                    <a href="https://apple.com/" class="promo__offers-btn" data-translate="Continue">Continue</a>
+                    <a
+                        href="https://apple.com/"
+                        class="promo__offers-btn"
+                        data-translate="Continue">Continue</a>
                 </div>
 
                 <div class="promo__footer">
-                    <a href="#" class="promo__footer-link" data-translate="Terms of Use">Terms of use</a>
-                    <a href="#" class="promo__footer-link" data-translate="Privacy Policy">Privacy policy</a>
-                    <a href="#" class="promo__footer-link" data-translate="Restore">Restore</a>
+                    <a
+                        href="#"
+                        class="promo__footer-link"
+                        data-translate="Terms of Use">Terms of use</a>
+                    <a
+                        href="#"
+                        class="promo__footer-link"
+                        data-translate="Privacy Policy">Privacy policy</a>
+                    <a
+                        href="#"
+                        class="promo__footer-link"
+                        data-translate="Restore">Restore</a>
                 </div>
+                
             </div>
         </section>
 

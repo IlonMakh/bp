@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
 * {
     padding: 0;
@@ -13,6 +13,10 @@ h4,
 h5,
 h6 {
     font-size: inherit;
+}
+
+html {
+    height: 100%;
 }
 
 html.lang-en,
@@ -60,7 +64,7 @@ body {
 
 .promo__close {
     position: absolute;
-    top: 8.53vh;
+    top: 8.53%;
     left: 0;
     width: 3.07vw;
     height: 3.07vw;
@@ -73,7 +77,7 @@ body {
 
 .promo__title {
     text-align: center;
-    text-shadow: 0px 0px 5.68vh rgba(4, 3, 26, 0.83);
+    text-shadow: 0px 0px 12.3vw rgba(4, 3, 26, 0.83);
     font-size: 4.2rem;
     font-weight: 860;
     line-height: 110%;
@@ -81,7 +85,7 @@ body {
 }
 
 .promo__features {
-    margin-top: 4.82vh;
+    margin-top: 10.43vw;
     width: 100%;
     display: flex;
     align-items: center;
@@ -114,14 +118,6 @@ body {
     z-index: 0;
 }
 
-.promo__features-item_blue {
-    width: 26.76vw;
-    height: 35.53vw;
-    position: relative;
-    background-color: rgba(255, 130, 228, 0.24);
-    border-radius: 2.76vw;
-}
-
 .promo__features-item_blue::after {
     content: "";
     position: absolute;
@@ -132,7 +128,6 @@ body {
     background: radial-gradient(circle, #00bfff, transparent);
     mix-blend-mode: overlay;
     filter: blur(30.580669403076172px);
-    border-radius: 2.76vw;
     z-index: 0;
 }
 
@@ -151,6 +146,7 @@ body {
     position: absolute;
     font-family: "SF Pro", Arial, sans-serif;
     font-size: 1.1rem;
+    line-height: 110%;
     font-weight: 400;
     bottom: 7.93%;
     left: 6.9%;
@@ -185,11 +181,11 @@ body {
 }
 
 .promo__offers {
-    margin-top: 5.88vh;
+    margin-top: 12.74vw;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.94vh;
+    gap: 2.05vw;
 }
 
 .promo__offers-item {
@@ -205,6 +201,11 @@ body {
     position: relative;
 }
 
+html.lang-fr .promo__offers-item,
+html.lang-de .promo__offers-item {
+    padding-right: 12.8vw;
+}
+
 .promo__offers-item_best {
     border: 1px solid #fff;
     background: rgba(255, 255, 255, 0.3);
@@ -212,7 +213,7 @@ body {
 }
 
 .promo__offers-item_best .promo__offers-item__price {
-    margin-top: 0.8vh;
+    margin-top: 1.79vw;
 }
 
 .promo__offers-item__label {
@@ -266,7 +267,7 @@ body {
     text-align: center;
     padding: 4.1vw 0;
     text-decoration: none;
-    margin-top: 1.89vh;
+    margin-top: 4.1vw;
     width: 100%;
     height: 14.35vw;
     border-radius: 8.2vw;
@@ -280,7 +281,7 @@ body {
 
 .promo__footer {
     width: 100%;
-    margin: 5.21vh 0 3.67vh;
+    margin: 11.28vw 0 7.94vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -295,4 +296,75 @@ body {
     text-decoration: none;
     text-transform: capitalize;
     white-space: nowrap;
+}
+
+@media (max-height: 811px) {
+    html.lang-en,
+    html.lang-ja {
+        font-size: 2.6vw;
+    }
+
+    html.lang-de,
+    html.lang-es,
+    html.lang-fr,
+    html.lang-pt {
+        font-size: 2.24vw;
+    }
+
+    .container {
+        width: 87.2vw;
+    }
+
+    .promo__close {
+        top: 5.67%;
+        width: 3.2vw;
+        height: 3.2vw;
+    }
+    
+    .promo__features {
+        margin-top: 10.66vw;
+    }
+    
+    .promo__features-item {
+        width: 27.84vw;
+        height: 36.96vw;
+    }
+    
+    .promo__offers {
+        margin-top: 10.77vw;
+        gap: 2.13vw;
+    }
+    
+    .promo__offers-item {
+        height: 14.93vw;
+        padding: 0 16.8vw 0 6.4vw;
+    }
+
+    html.lang-fr .promo__offers-item,
+    html.lang-de .promo__offers-item {
+        padding-right: 10.8vw;
+    }
+    
+    .promo__offers-item__label {
+        right: 6.4vw;
+        padding: 0.66vw 6vw;
+    }
+    
+    .promo__offers-item__title-wrapper {
+        gap: 0.6vw;
+    }
+    
+    .promo__offers-btn {
+        padding: 4.26vw 0;
+        margin-top: 0;
+        height: 14.93vw;
+    }
+    
+    .promo__footer {
+        margin: 7.46vw 0 2.93vw;
+    }
+    
+    .promo__footer-link {
+        letter-spacing: 0.058rem;
+    }
 }
